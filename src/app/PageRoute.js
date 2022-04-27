@@ -1,5 +1,6 @@
 // eslint-disable-next-line
 export default {
-    HomePage: '/',
-    LoginPage: '/login',
-};
+  HomePage: '/',
+  LoginPage: '/login',
+  SignupPage: '/signup',
+}

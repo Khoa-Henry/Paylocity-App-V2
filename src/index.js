@@ -3,6 +3,7 @@ import * as ReactDOM from 'react-dom'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import HomePage from './pages/HomePage'
 import LoginPage from './pages/LoginPage'
+import SignupPage from './pages/SignupPage'
 import PageRoute from './app/PageRoute'
 import { Provider } from 'react-redux'
 import store from './app/store'
@@ -13,6 +14,7 @@ ReactDOM.render(
       <Routes>
         <Route exact path={PageRoute.HomePage} element={<HomePage />} />
         <Route path={PageRoute.LoginPage} element={<LoginPage />} />
+        <Route path={PageRoute.SignupPage} element={<SignupPage />} />
       </Routes>
     </Router>
   </Provider>,
