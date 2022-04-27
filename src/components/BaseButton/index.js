@@ -7,14 +7,17 @@ import { styled } from '@mui/material/styles';
 const CoreButton = styled(Button)(({ theme }) => ({
     color: 'black',
     backgroundColor: 'white',
-    fontSize: '16px'
+    fontSize: '16px',
+    ":hover":{
+        backgroundColor: '#FDB44E'
+    }
 
 }))
 
 const BaseButton = (props) => {
     return(
         <Link to={props.routePath}>
-            <CoreButton variant="outline">{props.buttonName}</CoreButton>
+            <CoreButton fullWidth variant="outline" onClick={props.onClick}>{props.buttonName}</CoreButton>
         </Link>
     )
 };

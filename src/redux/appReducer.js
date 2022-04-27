@@ -4,7 +4,8 @@ import { merge } from 'lodash';
 const appReducer = createSlice({
     name: 'rootStoreState',
     initialState: {
-        username:'',
+        username:'knguyen',
+        password: 'hello',
     },
     reducers: {
         updateTheStoreState(state, action) {

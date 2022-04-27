@@ -17,7 +17,7 @@ const HomePage = () => {
             <Grid item xs={12} >
                 <img src={paylocityLogo} alt='paylocitylogo' className={classes.logo}/>
             </Grid>
-            <Grid item xs={12}>
+            <Grid item xs={6}>
                 <BaseButton routePath={PageRoute.LoginPage} buttonName='continue'/>
                 <br/>
                 <h3>Welcome</h3>

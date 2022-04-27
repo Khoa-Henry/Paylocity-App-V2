@@ -1,11 +1,11 @@
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import HomePage from './pages/HomePage';
-import LoginPage from './pages/LoginPage';
-import PageRoute from './app/PageRoute';
-import { Provider } from 'react-redux';
-import store from './app/store';
+import * as React from 'react'
+import * as ReactDOM from 'react-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import HomePage from './pages/HomePage'
+import LoginPage from './pages/LoginPage'
+import PageRoute from './app/PageRoute'
+import { Provider } from 'react-redux'
+import store from './app/store'
 
 ReactDOM.render(
   <Provider store={store}>
@@ -15,6 +15,6 @@ ReactDOM.render(
         <Route path={PageRoute.LoginPage} element={<LoginPage />} />
       </Routes>
     </Router>
-    </Provider>,
-  document.getElementById('root')
-);
+  </Provider>,
+  document.getElementById('root'),
+)
