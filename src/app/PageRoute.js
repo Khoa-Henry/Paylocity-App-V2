@@ -3,4 +3,5 @@ export default {
   HomePage: '/',
   LoginPage: '/login',
   SignupPage: '/signup',
+  DashBoardPage: '/dashboard',
 }

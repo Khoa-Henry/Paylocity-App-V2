@@ -5,6 +5,7 @@ import HomePage from './pages/HomePage'
 import LoginPage from './pages/LoginPage'
 import SignupPage from './pages/SignupPage'
 import PageRoute from './app/PageRoute'
+import DashBoard from './pages/:DashBoardPage'
 import { Provider } from 'react-redux'
 import store from './app/store'
 
@@ -15,6 +16,7 @@ ReactDOM.render(
         <Route exact path={PageRoute.HomePage} element={<HomePage />} />
         <Route path={PageRoute.LoginPage} element={<LoginPage />} />
         <Route path={PageRoute.SignupPage} element={<SignupPage />} />
+        <Route path={PageRoute.DashBoardPage} element={<DashBoard />} />
       </Routes>
     </Router>
   </Provider>,

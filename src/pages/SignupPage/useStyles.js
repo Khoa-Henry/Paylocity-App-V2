@@ -6,7 +6,7 @@ export default makeStyles(
       margin: '6.375rem 1rem 7.5rem 1rem',
       textAlign: 'center',
       [theme.breakpoints.down('xs')]: {
-        marginTop: '50%',
+        marginTop: '30%',
       },
     },
     container: {
@@ -14,7 +14,7 @@ export default makeStyles(
       padding: '25px',
       borderRadius: '25px',
     },
-    loginButton: {
+    signupButton: {
       backgroundColor: 'black',
     },
     logo: {
@@ -22,5 +22,5 @@ export default makeStyles(
       width: 'auto',
     },
   }),
-  { name: 'Login' },
+  { name: 'Signup' },
 )

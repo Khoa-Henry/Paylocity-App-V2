@@ -84,9 +84,16 @@ const SignupPage = () => {
             <br />
             <Grid item xs={12} md={6} p={1}>
               <BaseButton
+                buttonName="Back"
+                routePath={PageRoute.LoginPage}
+                className={classes.signupButton}
+              />
+            </Grid>
+            <Grid item xs={12} md={6} p={1}>
+              <BaseButton
                 buttonName="Sign Up"
-                routePath={PageRoute.HomePage}
-                className={classes.loginButton}
+                routePath={PageRoute.DashBoardPage}
+                className={classes.signupButton}
               />
             </Grid>
           </Grid>

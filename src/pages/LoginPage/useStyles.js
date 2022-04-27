@@ -6,7 +6,7 @@ export default makeStyles(
       margin: '6.375rem 1rem 7.5rem 1rem',
       textAlign: 'center',
       [theme.breakpoints.down('xs')]: {
-        marginTop: '50%',
+        marginTop: '40%',
       },
     },
     container: {
