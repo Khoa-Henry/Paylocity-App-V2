@@ -1,15 +1,15 @@
-import React from 'react'
-import Grid from '@mui/material/Grid'
-import useStyles from './useStyles'
-import TextField from '@mui/material/TextField'
-import BaseButton from '../../components/BaseButton'
-import PageRoute from '../../app/PageRoute'
-import Divider from '@mui/material/Divider'
+import React from "react";
+import Grid from "@mui/material/Grid";
+import useStyles from "./useStyles";
+import TextField from "@mui/material/TextField";
+import BaseButton from "../../components/BaseButton";
+import PageRoute from "../../app/PageRoute";
+import Divider from "@mui/material/Divider";
 
-import ProfileSection from './ProfileSection'
+import ProfileSection from "./ProfileSection";
 
 const DashBoard = () => {
-  const classes = useStyles()
+  const classes = useStyles();
 
   return (
     <div className={classes.root}>
@@ -73,6 +73,6 @@ const DashBoard = () => {
         </Grid>
       </Grid>
     </div>
-  )
-}
-export default DashBoard
+  );
+};
+export default DashBoard;
