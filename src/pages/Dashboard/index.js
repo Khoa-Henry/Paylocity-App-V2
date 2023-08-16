@@ -1,11 +1,9 @@
 import React from "react";
 import Grid from "@mui/material/Grid";
 import useStyles from "./useStyles";
-import TextField from "@mui/material/TextField";
 import BaseButton from "../../components/BaseButton";
 import PageRoute from "../../app/PageRoute";
 import Divider from "@mui/material/Divider";
-
 import ProfileSection from "./ProfileSection";
 
 const DashBoard = () => {
@@ -14,7 +12,9 @@ const DashBoard = () => {
   return (
     <div className={classes.root}>
       <ProfileSection />
+      <br />
       <Divider />
+
       {/* <Grid container alignItems="center" justifyContent="center">
         <Grid item xs={12}>
           <img
@@ -63,7 +63,12 @@ const DashBoard = () => {
           </Grid>
         </Grid>
       </Grid> */}
-      <Grid container className={classes.container} justifyContent="center">
+      <Grid
+        container
+        item
+        className={classes.container}
+        justifyContent="center"
+      >
         <Grid item xs={12} md={6} p={1}>
           <BaseButton
             buttonName="Sign Out"

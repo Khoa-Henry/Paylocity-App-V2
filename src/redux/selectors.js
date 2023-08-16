@@ -1,5 +1,5 @@
 const getAppState = (state) => {
-    return state
-}
+  return state;
+};
 
 export default getAppState;

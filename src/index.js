@@ -1,13 +1,13 @@
-import * as React from 'react'
-import * as ReactDOM from 'react-dom'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import HomePage from './pages/HomePage'
-import LoginPage from './pages/LoginPage'
-import SignupPage from './pages/SignupPage'
-import PageRoute from './app/PageRoute'
-import DashBoard from './pages/:DashBoardPage'
-import { Provider } from 'react-redux'
-import store from './app/store'
+import * as React from "react";
+import * as ReactDOM from "react-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import LoginPage from "./pages/LoginPage";
+import SignupPage from "./pages/SignupPage";
+import PageRoute from "./app/PageRoute";
+import DashBoard from "./pages/Dashboard";
+import { Provider } from "react-redux";
+import store from "./app/store";
 
 ReactDOM.render(
   <Provider store={store}>
@@ -20,5 +20,5 @@ ReactDOM.render(
       </Routes>
     </Router>
   </Provider>,
-  document.getElementById('root'),
-)
+  document.getElementById("root")
+);

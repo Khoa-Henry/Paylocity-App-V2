@@ -1,13 +1,13 @@
-import React from 'react'
-import Grid from '@mui/material/Grid'
-import useStyles from './useStyles'
-import TextField from '@mui/material/TextField'
-import BaseButton from '../../components/BaseButton'
-import PageRoute from '../../app/PageRoute'
-import paylocityLogo from '../../app/pictures/paylocitylogo.png'
+import React from "react";
+import Grid from "@mui/material/Grid";
+import useStyles from "./useStyles";
+import TextField from "@mui/material/TextField";
+import BaseButton from "../../components/BaseButton";
+import PageRoute from "../../app/PageRoute";
+import paylocityLogo from "../../app/pictures/paylocitylogo.png";
 
 const LoginPage = () => {
-  const classes = useStyles()
+  const classes = useStyles();
 
   return (
     <div className={classes.root}>
@@ -60,6 +60,6 @@ const LoginPage = () => {
         </Grid>
       </Grid>
     </div>
-  )
-}
-export default LoginPage
+  );
+};
+export default LoginPage;

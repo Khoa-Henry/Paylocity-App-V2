@@ -1,18 +1,18 @@
-import { createSlice } from '@reduxjs/toolkit';
-import { merge } from 'lodash';
+import { createSlice } from "@reduxjs/toolkit";
+import { merge } from "lodash";
 
 const appReducer = createSlice({
-    name: 'rootStoreState',
-    initialState: {
-        username:'knguyen',
-        password: 'hello',
+  name: "rootStoreState",
+  initialState: {
+    username: "knguyen",
+    password: "hello",
+  },
+  reducers: {
+    updateTheStoreState(state, action) {
+      const { newInput } = action.payload;
+      merge(state, newInput);
     },
-    reducers: {
-        updateTheStoreState(state, action) {
-            const { newInput } = action.payload;
-            merge(state, newInput);
-        },
-    },
+  },
 });
 
 const { updateTheStoreState } = appReducer.actions;
@@ -21,5 +21,5 @@ export default appReducer.reducer;
 
 // save info to the redux store
 export const updateTheReduxStore = (info) => (dispatch) => {
-    dispatch(updateTheStoreState({ info }))
+  dispatch(updateTheStoreState({ info }));
 };

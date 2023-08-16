@@ -5,6 +5,7 @@ export default makeStyles(
     root: {
       margin: "0rem 1rem 7.5rem 1rem",
       textAlign: "center",
+      paddingTop: "10px",
     },
     container: {},
     signoutButton: {
